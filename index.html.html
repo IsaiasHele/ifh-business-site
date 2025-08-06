@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFH Business Consultancy</title>
+  <meta name="description" content="Consultoria em Contabilidade, Finanças e Negócios. Cursos, treinamentos e consultoria online para empresas.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333;}
+    header {display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: #004080; color: #fff; position: fixed; width: 100%; top: 0; z-index: 1000;}
+    header .logo img {height: 50px;}
+    nav ul {list-style: none; display: flex; gap: 20px;}
+    nav ul li a {color: #fff; text-decoration: none; font-weight: 500;}
+    .btn {background: #007bff; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; transition: 0.3s;}
+    .btn:hover {background: #0056b3;}
+    .menu-toggle {display: none; font-size: 24px; cursor: pointer;}
+    .hero {background: url('https://images.unsplash.com/photo-1556741533-f6acd647d2fb?fit=crop&w=1350&q=80') no-repeat center center/cover; height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; padding: 0 10px;}
+    .hero h1 {font-size: 2.5rem; max-width: 700px;}
+    .hero p {margin: 15px 0; font-size: 1.2rem;}
+    section {padding: 70px 5%;}
+    h2 {text-align: center; margin-bottom: 30px; color: #004080;}
+    .cards {display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;}
+    .card {background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); flex: 1 1 calc(25% - 20px); min-width: 250px; text-align: center;}
+    .card i {font-size: 40px; color: #004080; margin-bottom: 10px;}
+    form {display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: auto;}
+    input, textarea {width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;}
+    footer {background: #004080; color: #fff; text-align: center; padding: 20px;}
+    .whatsapp {position: fixed; bottom: 20px; right: 20px; background: #25d366; color: #fff; font-size: 30px; padding: 15px; border-radius: 50%; text-align: center;}
+    @media(max-width: 768px) {
+      nav ul {display: none; flex-direction: column; background: #004080; position: absolute; top: 70px; right: 0; width: 200px; padding: 20px;}
+      nav ul.show {display: flex;}
+      .menu-toggle {display: block; color: #fff;}
+      .cards {flex-direction: column;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://via.placeholder.com/150x50?text=IFH+Logo" alt="IFH Business Consultancy" />
+  </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#sobre">Sobre Nós</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  <a href="#contato" class="btn">Solicitar Proposta</a>
+  <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Consultoria Empresarial para Impulsionar seus Resultados</h1>
+    <p>Planejamento estratégico, gestão financeira e soluções fiscais sob medida para sua empresa.</p>
+    <a href="#contato" class="btn">Agendar Reunião</a>
+  </div>
+</section>
+
+<section id="sobre">
+  <h2>Sobre Nós</h2>
+  <p style="text-align:center; max-width:800px; margin:auto;">A IFH Business Consultancy oferece soluções em contabilidade, finanças e gestão empresarial. Com mais de 7 anos ajudando empresas a crescer.</p>
+</section>
+
+<section id="servicos">
+  <h2>Nossos Serviços</h2>
+  <div class="cards">
+    <div class="card"><i class="fas fa-chart-line"></i><h3>Consultoria Financeira</h3><p>Gestão de finanças empresariais para otimizar lucros e reduzir riscos.</p></div>
+    <div class="card"><i class="fas fa-file-invoice-dollar"></i><h3>Consultoria Fiscal</h3><p>Planejamento tributário e conformidade fiscal para sua empresa.</p></div>
+    <div class="card"><i class="fas fa-users-cog"></i><h3>Gestão Empresarial</h3><p>Soluções estratégicas para melhorar processos e resultados.</p></div>
+    <div class="card"><i class="fas fa-project-diagram"></i><h3>Planejamento Estratégico</h3><p>Planos personalizados para crescimento sustentável.</p></div>
+  </div>
+</section>
+
+<section id="cursos">
+  <h2>Cursos e Treinamentos</h2>
+  <div class="cards">
+    <div class="card"><h3>Contabilidade e Fiscalidade na Prática</h3><p>Carga horária: 20h</p><p>Preço: 5.000 MZN</p><a href="#contato" class="btn">Inscreva-se</a></div>
+    <div class="card"><h3>Planejamento Financeiro</h3><p>Carga horária: 15h</p><p>Preço: 4.000 MZN</p><a href="#contato" class="btn">Inscreva-se</a></div>
+    <div class="card"><h3>Gestão de Recursos Humanos</h3><p>Carga horária: 18h</p><p>Preço: 4.500 MZN</p><a href="#contato" class="btn">Inscreva-se</a></div>
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Entre em Contato</h2>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="nome" placeholder="Nome" required>
+    <input type="email" name="email" placeholder="E-mail" required>
+    <input type="text" name="telefone" placeholder="Telefone">
+    <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+    <button type="submit" class="btn">Enviar</button>
+  </form>
+  <p style="text-align:center; margin-top:10px;">Ou fale conosco no WhatsApp</p>
+</section>
+
+<footer>
+  <p>© 2025 IFH Business Consultancy - Todos os direitos reservados.</p>
+  <p>Rua da Mozal, Matola-Rio, Maputo - Moçambique | Tel: +258 842931520 / 863174809 | E-mail: ifhconsultoria10@gmail.com</p>
+</footer>
+
+<a href="https://wa.me/258842931520" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+</script>
+</body>
+</html>
